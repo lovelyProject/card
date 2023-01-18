@@ -11,6 +11,8 @@ $black: #000
     font-weight: 400
 .main-wrapper
     background: #000
+    min-height: 100vh
+    overflow: hidden
 .wrapper
     margin: 0 auto
     max-width: 116rem
@@ -24,9 +26,9 @@ $black: #000
     position: relative
     overflow: hidden
     &-photo
-        width: 150%
+        width: 164%
         position: absolute
-        left: -25%
+        left: -32%
 
 //MAIN
 .main
@@ -77,11 +79,14 @@ $black: #000
         display: flex
         justify-content: space-between
         margin-bottom: 5rem
-        &-item
-            flex-basis: 33.3%
-            padding-bottom: 6.5rem
-            margin-right: 4rem
-            position: relative
+    &-item
+        flex-basis: 33.3%
+        margin-right: 4rem
+        position: relative
+        & img
+            cursor: zoom-in
+            &:hover
+                opacity: .3
     &__btn-container
         position: relative
         min-height: 4.5rem
@@ -101,17 +106,27 @@ $black: #000
         font-weight: 500
         line-height: 150%
         margin-bottom: 2rem
+        max-width: 36rem
     &-item
         display: flex
         flex-direction: column
         justify-content: space-between
+#slider
+    position: relative
+    margin-bottom: 48rem
 .slider
     &-photo
         height: 45.6rem
         width: 55rem
         margin-bottom: 2.5rem
+        position: absolute
+        cursor: zoom-in
+        &:hover
+            opacity: 0.4
         &-container
             margin-right: 6rem
+            height: 45.6rem
+            width: 55rem
     &-title
         color: $yellow
         font-size: 3.6rem
@@ -185,3 +200,26 @@ $black: #000
         margin-right: 1.5rem
 .dot-active
     background-color: $yellow
+.popup-container
+    background-color: rgba($grey, 0.4)
+    position: fixed
+    height: 100vh
+    width: 100%
+    top: 0
+    left: 0
+    z-index: -1
+.popup-active
+    z-index: 1
+.popup-item
+    &-container
+        position: relative
+    position: fixed
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    & img
+        width: 82.5rem
+        height: 68.4rem
+
+.overflow
+    overflow: hidden

@@ -20,11 +20,15 @@
             <main class="main">
                 <div class="main__slider">
                     <div class="slider-photo-container">
-                        <img class="slider-photo" src="images/item.png" alt="">
-                        <div class="slider-dots-container">
-                            <span class="slider-dots-container-item dot-active"></span> <span
-                                class="slider-dots-container-item dot"></span> <span
-                                class="slider-dots-container-item dot"></span>
+                        <div id="slider">
+                            <img class="slider-photo " src="images/item.png" alt=""> <img class="slider-photo "
+                                src="images/item-2.png" alt=""> <img class="slider-photo " src="images/item-3.png"
+                                alt="">
+                        </div>
+                        <div class="slider-dots-container" id="topDots">
+                            <span class="slider-dots-container-item dot-active" onclick="showSlide(0)"></span>
+                            <span class="slider-dots-container-item dot" onclick="showSlide(1)"></span>
+                            <span class="slider-dots-container-item dot" onclick="showSlide(2)"></span>
                         </div>
                     </div>
                     <div class="slider-item-info">
@@ -62,30 +66,45 @@
                         <h2 class="main__toggle-title main__toggle-title_active toggle-active">Описание</h2>
                         <h2 class="main__toggle-title">Характеристики</h2>
                     </div>
-                    <p class="main__toggle-text">Если во время эксплуатации листогиба Tapco Max-20 вышла из строя (или сломалась) какая-либо его часть, и вы не знаете куда обратиться за помощью — вы попали по адресу. Для того, чтобы точно узнать стоимость замены какой-либо детали или узла вам необходимо воспользоваться схемой сборки и деталировкой листогиба Тапко и определить артикульный номер нужной вам детали. По артикулу вы узнаете стоимость запчасти. Практически все артикульные позиции имеются в наличии у нас на складах. Бывает часто так, что необходимо заменить на листогибе силиконовую ленту на гибочной балке (или по другому вставка виниловая) и несколько кулачков в сборе, которые постоянно участвуют в процессе фиксации и зажима металлического листа и с определенной периодичностью могут выходить из строя, и в решение этого вопроса производителем данного оборудования был сформирован специальный комплект расходных материалов. Купив его клиент выигрывает по стоимости, в сравнении с тем, если покупать каждую позицию по отдельности</p>
+                    <p class="main__toggle-text">Если во время эксплуатации листогиба Tapco Max-20 вышла из строя (или
+                        сломалась) какая-либо его часть, и вы не знаете куда обратиться за помощью — вы попали по
+                        адресу. Для того, чтобы точно узнать стоимость замены какой-либо детали или узла вам необходимо
+                        воспользоваться схемой сборки и деталировкой листогиба Тапко и определить артикульный номер
+                        нужной вам детали. По артикулу вы узнаете стоимость запчасти. Практически все артикульные
+                        позиции имеются в наличии у нас на складах. Бывает часто так, что необходимо заменить на
+                        листогибе силиконовую ленту на гибочной балке (или по другому вставка виниловая) и несколько
+                        кулачков в сборе, которые постоянно участвуют в процессе фиксации и зажима металлического листа
+                        и с определенной периодичностью могут выходить из строя, и в решение этого вопроса
+                        производителем данного оборудования был сформирован специальный комплект расходных материалов.
+                        Купив его клиент выигрывает по стоимости, в сравнении с тем, если покупать каждую позицию по
+                        отдельности</p>
                 </div>
                 <h2 class="main__title">Рекомендуемые товары</h2>
                 <div class="bottom-slider-container">
                     <div class="bottom-slider-item">
-                        <div class="">                        <img class="bottom-slider__photo" src="./images/item-1.png" alt="Ролик">
+                        <div class=""> <img class="bottom-slider__photo" src="./images/item-1.png" alt="Ролик">
                             <h3 class="bottom-slider__title">Ролик направляющий для ножа Tapco, металлический</h3>
-                            <p class="bottom-slider-text">Ролик направляющий подходит на все модели роликовых ножей Tapco</p></div>
+                            <p class="bottom-slider-text">Ролик направляющий подходит на все модели роликовых ножей
+                                Tapco</p>
+                        </div>
                         <div class="bottom-slider__btn-container">
                             <button class="slider-btn slider-btn__small_yellow">Подробнее</button>
                             <button class="slider-btn slider-btn__small_black">Оформить заказ</button>
                         </div>
                     </div>
                     <div class="bottom-slider-item">
-                        <div class="">                        <img class="bottom-slider__photo" src="./images/item-2.png" alt="Ролик">
-                            <h3 class="bottom-slider__title">Ролик направляющий для ножа Tapco, металлический</h3></div>
+                        <div class=""> <img class="bottom-slider__photo" src="./images/item-2.png" alt="Ролик">
+                            <h3 class="bottom-slider__title">Роликовый нож Tapco</h3>
+                        </div>
                         <div class="bottom-slider__btn-container">
                             <button class="slider-btn slider-btn__small_yellow">Подробнее</button>
                             <button class="slider-btn slider-btn__small_black">Оформить заказ</button>
                         </div>
                     </div>
                     <div class="bottom-slider-item">
-                        <div class="">                        <img class="bottom-slider__photo" src="./images/item-3.png" alt="Ролик">
-                            <h3 class="bottom-slider__title">Ролик направляющий для ножа Tapco, металлический</h3></div>
+                        <div class=""> <img class="bottom-slider__photo" src="./images/item-3.png" alt="Ролик">
+                            <h3 class="bottom-slider__title">Корпус для роликового ножа Tapco Max Cut Off</h3>
+                        </div>
                         <div class="bottom-slider__btn-container">
                             <button class="slider-btn slider-btn__small_yellow">Подробнее</button>
                             <button class="slider-btn slider-btn__small_black">Оформить заказ</button>
@@ -99,7 +118,13 @@
                 </div>
             </main>
         </div>
+        <div class="popup-container">
+            <div class="popup-item-container">
+                <div class="popup-item" id="popup-item"></div>
+            </div>
+        </div>
     </div>
 </body>
+<script src="script.js"></script>
 
 </html>
