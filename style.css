@@ -15,9 +15,15 @@
 }
 
 .header {
-  background: url(./images/header-bg.png) center/contain no-repeat;
   min-height: 19.8rem;
   margin-bottom: 5rem;
+  position: relative;
+  overflow: hidden;
+}
+.header-photo {
+  width: 150%;
+  position: absolute;
+  left: -25%;
 }
 
 .main {
