@@ -8,6 +8,8 @@ const popup = document.getElementById("popup-item");
 const popupContainer = popup.closest('.popup-container');
 const body = document.body
 const bottomSlides = document.querySelectorAll(".bottom-slider-item img");
+const bottomSlider = document.getElementById("bottom-slider");
+const bottomDots = document.getElementById("bottom-dots").children;
 
 function showSlide(n) {
     currentSlide = n;
@@ -55,3 +57,13 @@ function zoom(event) {
 bottomSlides.forEach(elem => {
     elem.addEventListener('click', zoom);
 })
+
+function showBottomSlides(n) {
+    bottomSlider.style.marginLeft = `-${40*n}rem`
+    
+    for (let elem of bottomDots){
+        elem.classList.remove("dot-active");
+    }
+
+    bottomDots[n].classList.add("dot-active");
+}

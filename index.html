@@ -80,7 +80,7 @@
                         отдельности</p>
                 </div>
                 <h2 class="main__title">Рекомендуемые товары</h2>
-                <div class="bottom-slider-container">
+                <div class="bottom-slider-container" id="bottom-slider">
                     <div class="bottom-slider-item">
                         <div class=""> <img class="bottom-slider__photo" src="./images/item-1.png" alt="Ролик">
                             <h3 class="bottom-slider__title">Ролик направляющий для ножа Tapco, металлический</h3>
@@ -110,14 +110,100 @@
                             <button class="slider-btn slider-btn__small_black">Оформить заказ</button>
                         </div>
                     </div>
+                    <div class="bottom-slider-item">
+                        <div class=""> <img class="bottom-slider__photo" src="./images/item-3.png" alt="Ролик">
+                            <h3 class="bottom-slider__title">Корпус для роликового ножа Tapco Max Cut Off</h3>
+                        </div>
+                        <div class="bottom-slider__btn-container">
+                            <button class="slider-btn slider-btn__small_yellow">Подробнее</button>
+                            <button class="slider-btn slider-btn__small_black">Оформить заказ</button>
+                        </div>
+                    </div>
+                    <div class="bottom-slider-item">
+                        <div class=""> <img class="bottom-slider__photo" src="./images/item-3.png" alt="Ролик">
+                            <h3 class="bottom-slider__title">Корпус для роликового ножа Tapco Max Cut Off</h3>
+                        </div>
+                        <div class="bottom-slider__btn-container">
+                            <button class="slider-btn slider-btn__small_yellow">Подробнее</button>
+                            <button class="slider-btn slider-btn__small_black">Оформить заказ</button>
+                        </div>
+                    </div>
+                    <div class="bottom-slider-item">
+                        <div class=""> <img class="bottom-slider__photo" src="./images/item-3.png" alt="Ролик">
+                            <h3 class="bottom-slider__title">Корпус для роликового ножа Tapco Max Cut Off</h3>
+                        </div>
+                        <div class="bottom-slider__btn-container">
+                            <button class="slider-btn slider-btn__small_yellow">Подробнее</button>
+                            <button class="slider-btn slider-btn__small_black">Оформить заказ</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="slider-dots-container">
-                    <span class="slider-dots-container-item dot-active"></span> <span
-                        class="slider-dots-container-item dot"></span> <span
-                        class="slider-dots-container-item dot"></span>
+                <div class="slider-dots-container" id="bottom-dots">
+                    <span onclick="showBottomSlides(0)" class="slider-dots-container-item dot-active"></span>
+                    <span class="slider-dots-container-item dot" onclick="showBottomSlides(1)"></span>
+                    <span class="slider-dots-container-item dot" onclick="showBottomSlides(2)"></span>
                 </div>
             </main>
         </div>
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-info">
+                    <div class="info-first">
+                        <h4 class="info-title info-item">Листогибы</h4>
+                        <ul class="info-list">
+                            <a href="#" class="info-list-item">Листогибы б/у</a>
+                        </ul>
+                    </div>
+                    <div class="info-second info-item">
+                        <h4 class="info-title">Запчасти для листогибов</h4>
+                        <ul class="info-list">
+                            <a href="#" class="info-list-item">Запчасти для листогибов Tapco</a>
+                            <a href="#" class="info-list-item">Запчасти для листогибов Van Mark</a>
+                        </ul>
+                    </div>
+                    <div class="info-third info-item">
+                        <h4 class="info-title">О компании</h4>
+                        <ul class="info-list">
+                            <a href="#" class="info-list-item">Доставка</a>
+                            <a href="#" class="info-list-item">Контакты</a>
+                        </ul>
+                    </div>
+                    <div class="info-fourth info-item">
+                        <a href="tel:+78005059590" class="info-tel">8 800 505 95 90</a>
+                        <a href="mailto:+78005059590" class="info-mail">prom.stan2017@yandex.ru</a>
+                        <div class="info-ui-kit-container">
+                            <!-- youtube -->
+                            <a href="#" class="info-ui-kit-item">
+                                <svg class="info-ui-kit-item-svg" viewBox="0 0 40 40"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="20" cy="20" r="20" fill="#3C3C40" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M8.29403 15.5314C8 16.4826 8 17.6551 8 20C8 22.3449 8 23.5174 8.29403 24.4686C8.91732 26.4849 10.4658 28.0643 12.4426 28.7001C13.3751 29 14.5246 29 16.8235 29H23.1765C25.4754 29 26.6249 29 27.5574 28.7001C29.5342 28.0643 31.0827 26.4849 31.706 24.4686C32 23.5174 32 22.3449 32 20C32 17.6551 32 16.4826 31.706 15.5314C31.0827 13.5151 29.5342 11.9357 27.5574 11.2999C26.6249 11 25.4754 11 23.1765 11H16.8235C14.5246 11 13.3751 11 12.4426 11.2999C10.4658 11.9357 8.91732 13.5151 8.29403 15.5314ZM17.1765 23.24L23.5294 20L17.1765 16.76V23.24Z"
+                                        fill="white" />
+                                </svg></a>
+                            <!-- whatsapp -->
+                            <a href="#" class="info-ui-kit-item">
+                                <svg class="info-ui-kit-item-svg" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="20" cy="20" r="20" fill="#3C3C40"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M19.1313 8.00776C17.3168 8.18434 15.9486 8.57589 14.4646 9.34309C12.1991 10.5144 10.3698 12.3782 9.23876 14.6675C8.80423 15.5471 8.59943 16.0863 8.37232 16.9489C8.086 18.036 8.00263 18.697 8.00005 19.8998C7.99878 20.4986 8.0235 21.1486 8.05719 21.4014C8.31339 23.3241 8.91724 24.9811 9.92715 26.5325L10.2638 27.0495L9.51602 29.2538C9.10474 30.4661 8.77476 31.4645 8.7827 31.4725C8.79069 31.4804 9.81931 31.1605 11.0685 30.7614C12.3178 30.3623 13.3567 30.0358 13.3771 30.0358C13.3975 30.0358 13.5904 30.1452 13.8057 30.2788C14.0209 30.4124 14.472 30.6531 14.808 30.8137C17.8462 32.2657 21.3193 32.39 24.4303 31.158C27.9551 29.7621 30.6625 26.7084 31.6289 23.0384C31.9249 21.9144 32 21.2982 32 19.9937C32 18.6891 31.9249 18.0729 31.6289 16.9489C30.4952 12.6435 27.0396 9.29696 22.6792 8.28148C21.9465 8.11086 21.1842 8.02442 20.2591 8.0071C19.7422 7.99739 19.2346 7.99767 19.1313 8.00776ZM16.2652 13.5761C16.3431 13.6165 16.4521 13.7307 16.5076 13.83C16.6477 14.0808 17.7901 16.8284 17.8234 16.9947C17.8659 17.2073 17.6577 17.5687 17.1906 18.0932C16.7032 18.6404 16.5984 18.8161 16.6418 19.0134C16.7206 19.3715 17.8074 20.8108 18.477 21.4437C19.516 22.4259 21.0866 23.3585 21.7863 23.4089C22.1461 23.4349 22.2773 23.3332 22.8277 22.6016C23.0774 22.2698 23.3437 21.9362 23.4195 21.8606C23.6007 21.6796 23.8698 21.6412 24.1716 21.7533C24.5586 21.8972 26.9248 23.0479 27.091 23.1731L27.2501 23.2929L27.2238 23.7901C27.1564 25.0666 26.7081 25.7294 25.5222 26.3057C24.3948 26.8536 23.5123 26.8387 21.7846 26.2423C19.4666 25.4423 18.2363 24.6781 16.5691 23.0028C15.7349 22.1646 15.1421 21.4559 14.4641 20.4864C13.3468 18.8887 12.9183 17.655 13.0458 16.4029C13.1481 15.3989 13.4994 14.6578 14.209 13.9493C14.5522 13.6066 15.0013 13.4654 15.6773 13.488C15.9641 13.4975 16.1744 13.529 16.2652 13.5761Z" fill="white"/>
+                                    </svg>                                    
+                            </a>
+                            <!-- telegram -->
+                            <a href="#" class="info-ui-kit-item">
+                                <svg class="info-ui-kit-item-svg" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="20" cy="20" r="20" fill="#3C3C40"/>
+                                    <path d="M28.515 12.1118L9.02726 19.0358C7.6973 19.5279 7.705 20.2115 8.78326 20.5164L13.7865 21.9544L25.3627 15.2249C25.9101 14.918 26.4102 15.0831 25.9991 15.4193L16.6201 23.2183H16.6179L16.6201 23.2193L16.275 27.971C16.7806 27.971 17.0037 27.7573 17.2873 27.5052L19.7175 25.3278L24.7725 28.768C25.7045 29.241 26.3739 28.9979 26.6058 27.973L29.9241 13.564C30.2638 12.3093 29.4042 11.7411 28.515 12.1118Z" fill="white"/>
+                                    </svg>                                    
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <hr class="footer__hr footer__first-hr">
+                <div class="footer__tel">
+                    
+                </div>
+            </div>
+        </footer>
         <div class="popup-container">
             <div class="popup-item-container">
                 <div class="popup-item" id="popup-item"></div>

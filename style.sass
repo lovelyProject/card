@@ -4,7 +4,7 @@ $yellow-hover: rgba(219, 164, 44,.5)
 $white: #fff
 $grey:#808080
 $black: #000
-
+$dark-grey: #202024
 *
     font-size: 62.5%
     font-family: Akrobat
@@ -33,6 +33,7 @@ $black: #000
 //MAIN
 .main
     padding-bottom: 15rem
+    overflow-x: hidden
     &__slider
         display: flex
         align-items: center
@@ -79,6 +80,10 @@ $black: #000
         display: flex
         justify-content: space-between
         margin-bottom: 5rem
+        overflow: hidden
+        margin-left: 0rem
+        transition:  .7s ease
+
     &-item
         flex-basis: 33.3%
         margin-right: 4rem
@@ -223,3 +228,76 @@ $black: #000
 
 .overflow
     overflow: hidden
+
+//FOOTER
+.footer
+    background-color: $dark-grey
+    &-container
+        padding: 7rem 0 3rem
+        max-width: 116rem
+        margin: 0 auto
+    &-info
+        display: flex
+        justify-content: space-between
+        margin-bottom: 5rem
+    &__hr
+        border: .1rem solid rgba($white, .1)
+    &__first-hr
+        margin-bottom: 5rem
+.info-title
+    font-weight: 700
+    font-size: 2.2rem
+    text-transform: uppercase
+    line-height: 2.6rem
+    color: $yellow
+    margin-bottom: 2.5rem
+.info-list
+    display: flex
+    flex-direction: column
+    &-item
+        font-weight: 600
+        font-size: 2rem
+        line-height: 2.4rem
+        color: $white
+        text-decoration: none
+        margin-bottom: 1rem
+        &:hover
+            opacity: .7
+.info-fourth
+    display: flex
+    flex-direction: column
+.info
+    &-tel
+        display: inline-block
+        font-size: 3.6rem
+        text-transform: uppercase
+        font-weight: 500
+        line-height: 4.3rem
+        text-align: right
+        color: $white
+        text-decoration: none
+        margin-bottom: .6rem
+        &:hover
+            opacity: .7
+    &-mail
+        display: inline-block
+        font-weight: 600
+        font-size: 2rem
+        line-height: 2.4rem
+        text-align: right
+        color: $yellow
+        text-decoration: none
+        margin-bottom: 1.5rem
+        &:hover
+            color: $yellow-hover
+.info-ui-kit-container
+    display: flex
+    justify-content: flex-end
+.info-ui-kit-item
+    &-svg
+        height: 4rem
+        width: 4rem
+    &:not(:last-child)
+        margin-right: .5rem
+    &:hover
+        opacity: .5
