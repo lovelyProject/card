@@ -10,6 +10,8 @@ const body = document.body
 const bottomSlides = document.querySelectorAll(".bottom-slider-item img");
 const bottomSlider = document.getElementById("bottom-slider");
 const bottomDots = document.getElementById("bottom-dots").children;
+const toggleText = document.querySelectorAll(".main__toggle-text");
+const toggleTitles = document.querySelectorAll(".main__toggle-title ");
 
 function showSlide(n) {
     currentSlide = n;
@@ -67,3 +69,17 @@ function showBottomSlides(n) {
 
     bottomDots[n].classList.add("dot-active");
 }
+
+function switchToggle(n) {
+    for (let elem of toggleTitles){
+        elem.classList.remove("main__toggle-title_active");
+    }
+    toggleTitles[n].classList.add("main__toggle-title_active");
+    for (let elem of toggleText){
+        elem.style.display = "none";
+    }
+
+    toggleText[n].style.display = "block";
+}
+
+switchToggle(0)
