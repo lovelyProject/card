@@ -2,13 +2,16 @@
 $yellow: rgba(219, 164, 44,1)
 $yellow-hover: rgba(219, 164, 44,.5)
 $white: #fff
-$grey:#808080
+$grey: #808080
 $black: #000
 $dark-grey: #202024
+$light-grey: #878787
 *
     font-size: 62.5%
     font-family: Akrobat
     font-weight: 400
+h1,h2,h3,h4,h5,h6,span,p
+    cursor: default
 .main-wrapper
     background: #000
     min-height: 100vh
@@ -16,7 +19,6 @@ $dark-grey: #202024
 .wrapper
     margin: 0 auto
     max-width: 116rem
-
 
 //HEADER
 .header
@@ -82,7 +84,7 @@ $dark-grey: #202024
         margin-bottom: 5rem
         overflow: hidden
         margin-left: 0rem
-        transition:  .7s ease
+        transition: .7s ease
 
     &-item
         flex-basis: 33.3%
@@ -153,7 +155,7 @@ $dark-grey: #202024
         color: $white
         font-weight: 500
         line-height: 150%
-    
+
     &-item-jackdaw
         width: 1.2rem
         height: .9rem
@@ -218,10 +220,10 @@ $dark-grey: #202024
 .popup-item
     &-container
         position: relative
-    position: fixed
-    top: 50%
-    left: 50%
-    transform: translate(-50%, -50%)
+        position: fixed
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
     & img
         width: 82.5rem
         height: 68.4rem
@@ -244,6 +246,51 @@ $dark-grey: #202024
         border: .1rem solid rgba($white, .1)
     &__first-hr
         margin-bottom: 5rem
+    &__second-hr
+        margin-bottom: 3rem
+    &__tel
+        display: flex
+        justify-content: space-between
+        margin-bottom: 5rem
+        &-title
+            font-size: 3.6rem
+            color: $yellow
+            font-weight: 700
+            line-height: 4.3rem
+            text-transform: uppercase
+            margin-bottom: .5rem
+        &-description
+            font-weight: 600
+            color: $white
+            font-size: 2rem
+            line-height: 2.4rem
+        &-top
+            margin-bottom: 1rem
+            display: flex
+            flex-wrap: nowrap
+            align-items: center
+        &-policy
+            font-weight: 600
+            font-size: 1.6rem
+            line-height: 1.9rem
+            color: $white
+    &-bottom-block
+        display: flex
+        justify-content: space-between
+        & a:hover
+            opacity: .7
+        &__item
+            font-weight: 600
+            font-size: 1.6rem
+            line-height: 1.9rem
+            color: $white
+#policy
+    color: $white
+    font-weight: 600
+    font-size: 1.6rem
+    line-height: 1.9rem
+    &:hover
+        opacity: .5
 .info-title
     font-weight: 700
     font-size: 2.2rem
@@ -301,3 +348,37 @@ $dark-grey: #202024
         margin-right: .5rem
     &:hover
         opacity: .5
+.order-tel
+    padding: .9rem 2rem 1.1rem
+    margin-left: 1rem
+.input-tel
+    width: 47rem
+    font-weight: 600
+    font-size: 20px
+    line-height: 24px
+    outline: none
+    padding: 1.1rem 0 1.1rem 2rem
+    border-radius: 1rem
+    color: $light-grey
+    font-family: Akrobat
+    border: none
+    height: 5rem
+
+@media  (max-width: 1172px)
+    html
+        font-size: 50%
+@media (max-width: 950px)
+    html
+        font-size: 45%
+@media (max-width: 865px)
+    html
+        font-size: 40%
+@media (max-width: 760px)
+    html
+        font-size: 35%
+@media (max-width: 680px)
+    html
+        font-size: 30%
+@media (max-width: 571px)
+    html
+        font-size: 25%

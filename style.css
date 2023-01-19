@@ -5,6 +5,10 @@
   font-weight: 400;
 }
 
+h1, h2, h3, h4, h5, h6, span, p {
+  cursor: default;
+}
+
 .main-wrapper {
   background: #000;
   min-height: 100vh;
@@ -260,14 +264,12 @@
   z-index: 1;
 }
 
-.popup-item {
+.popup-item-container {
+  position: relative;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-.popup-item-container {
-  position: relative;
 }
 .popup-item img {
   width: 82.5rem;
@@ -296,6 +298,63 @@
 }
 .footer__first-hr {
   margin-bottom: 5rem;
+}
+.footer__second-hr {
+  margin-bottom: 3rem;
+}
+.footer__tel {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5rem;
+}
+.footer__tel-title {
+  font-size: 3.6rem;
+  color: rgb(219, 164, 44);
+  font-weight: 700;
+  line-height: 4.3rem;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+.footer__tel-description {
+  font-weight: 600;
+  color: #fff;
+  font-size: 2rem;
+  line-height: 2.4rem;
+}
+.footer__tel-top {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.footer__tel-policy {
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  color: #fff;
+}
+.footer-bottom-block {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-bottom-block a:hover {
+  opacity: 0.7;
+}
+.footer-bottom-block__item {
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  color: #fff;
+}
+
+#policy {
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+}
+#policy:hover {
+  opacity: 0.5;
 }
 
 .info-title {
@@ -370,6 +429,56 @@
 }
 .info-ui-kit-item:hover {
   opacity: 0.5;
+}
+
+.order-tel {
+  padding: 0.9rem 2rem 1.1rem;
+  margin-left: 1rem;
+}
+
+.input-tel {
+  width: 47rem;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  outline: none;
+  padding: 1.1rem 0 1.1rem 2rem;
+  border-radius: 1rem;
+  color: #878787;
+  font-family: Akrobat;
+  border: none;
+  height: 5rem;
+}
+
+@media (max-width: 1172px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (max-width: 950px) {
+  html {
+    font-size: 45%;
+  }
+}
+@media (max-width: 865px) {
+  html {
+    font-size: 40%;
+  }
+}
+@media (max-width: 760px) {
+  html {
+    font-size: 35%;
+  }
+}
+@media (max-width: 680px) {
+  html {
+    font-size: 30%;
+  }
+}
+@media (max-width: 571px) {
+  html {
+    font-size: 25%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
